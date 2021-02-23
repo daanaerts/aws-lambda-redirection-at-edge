@@ -1,6 +1,6 @@
 .PHONY: dist validate clean
 
-bucket = ${CODE_BUCKET}
+bucket = my_code_bucket
 regions = eu-central-1
 
 image:
