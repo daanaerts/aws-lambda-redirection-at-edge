@@ -25,7 +25,7 @@ Pre-requisites:
 1. Clone this repository using command
 ```git clone https://github.com/aws-samples/aws-lambda-redirection-at-edge```
 
-2.  From a terminal move into this folder and set CODE_BUCKET environment variable. A new bucket of format {CODE_BUCKET}-us-east-1 is created which holds the code assets for deployment.
+2.  From a terminal move into this folder and set CODE_BUCKET environment variable. A new bucket of format {CODE_BUCKET}-eu-central-1 is created which holds the code assets for deployment.
 
 ```export CODE_BUCKET=YOUR BUCKET NAME```
 

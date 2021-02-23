@@ -28,7 +28,7 @@
             },
             IdentityPoolId: 'IDENTITY_POOL_ID',
             awsconfig: {
-                region: 'us-east-1',
+                region: 'eu-central-1',
                 credentials: {}
             },
             statusCodes: [301, 302],
