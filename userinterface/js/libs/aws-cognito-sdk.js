@@ -11247,11 +11247,11 @@ module.exports={
     "ap-southeast-2/s3": "s3dash",
     "ap-northeast-1/s3": "s3dash",
     "sa-east-1/s3": "s3dash",
-    "eu-central-1/s3": {
+    "us-east-1/s3": {
       "endpoint": "{service}.amazonaws.com",
       "signatureVersion": "s3"
     },
-    "eu-central-1/sdb": {
+    "us-east-1/sdb": {
       "endpoint": "{service}.amazonaws.com",
       "signatureVersion": "v2"
     },
@@ -11345,7 +11345,7 @@ AWS.Request = inherit({
     var region = service.config.region;
     var customUserAgent = service.config.customUserAgent;
 
-    if (service.isGlobalEndpoint) region = 'eu-central-1';
+    if (service.isGlobalEndpoint) region = 'us-east-1';
 
     this.domain = domain && domain.active;
     this.service = service;

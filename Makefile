@@ -1,7 +1,7 @@
 .PHONY: dist validate clean
 
 bucket = conclusion-redirect-rules
-regions = eu-central-1
+regions = us-east-1
 
 image:
 	docker build --tag redirection:lambci12.x .
@@ -37,7 +37,7 @@ copytemplate:
 deploy: build package creates3 copycode copytemplate
 	@echo "*************************"
 	@echo "Deployment URL (copy and paste in browser)"
-	@echo " https://console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stacks/new?stackName=RedirectionEdge&templateURL=https://s3.amazonaws.com/${bucket}-eu-central-1/redirection/template/latest/template.yaml";
+	@echo " https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=RedirectionEdge&templateURL=https://s3.amazonaws.com/${bucket}-us-east-1/redirection/template/latest/template.yaml";
 
 clean:
 	rm -rf ./dist/*

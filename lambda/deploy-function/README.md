@@ -19,7 +19,7 @@ The Deploy function uses the AdmZip (https://www.npmjs.com/package/adm-zip) modu
             },
             IdentityPoolId: 'IDENTITY_POOL_ID',
             awsconfig: {
-                region: 'eu-central-1',
+                region: 'us-east-1',
                 credentials: {}
             },
             statusCodes: [301, 302],
