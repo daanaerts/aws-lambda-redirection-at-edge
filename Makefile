@@ -1,6 +1,6 @@
 .PHONY: dist validate clean
 
-bucket = my_code_bucket
+bucket = conclusion-redirect-rules
 regions = eu-central-1
 
 image:
